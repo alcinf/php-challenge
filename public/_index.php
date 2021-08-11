@@ -1,16 +1,12 @@
 <?php
 
 declare(strict_types=1);
-session_start();
 
 use DI\ContainerBuilder;
 use Slim\Factory\AppFactory;
 use Symfony\Component\Dotenv\Dotenv;
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
 
 require __DIR__ . '/../vendor/autoload.php';
-//require __DIR__ . '/../config/db.php';
 
 $dotenv = new Dotenv();
 $dotenv->load(__DIR__ . '/../.env');

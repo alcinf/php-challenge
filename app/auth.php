@@ -11,10 +11,12 @@ use Tuupola\Middleware\HttpBasicAuthentication;
 return function (App $app) {
     $username = $_ENV["ADMIN_USERNAME"] ?? 'root';
     $password = $_ENV["ADMIN_PASSWORD"] ?? 'secret';
+    //echo $password; exit;
 
     // 1st middleware to configure basic authentication
     $app->add(new HttpBasicAuthentication([
-        "path" => ["/bye"], // protected routes
+        //"path" => ["/bye"], // protected routes
+        "path" => [], // protected routes
         "users" => [
             $username => $password,
         ],
