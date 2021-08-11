@@ -36,3 +36,7 @@ GET /history (Query the historic searches for the current user. Only allowed for
 
 ### Instructions
 1. Create a new user (/users)
+2. Login user
+3. Make a query of the stock
+4. Review the history
+5. Logout the session
